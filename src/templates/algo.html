@@ -1,0 +1,1528 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Code Editor | Notika - Notika Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- font awesome CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.css">
+    <link rel="stylesheet" href="../static/css/owl.transitions.css">
+    <!-- meanmenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- wave CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../static/css/wave/waves.min.css">
+    <link rel="stylesheet" href="../static/css/wave/button.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- Notika icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/notika-custom-icon.css">
+    <!-- codemirror CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/code-editor/codemirror.css">
+    <link rel="stylesheet" href="../static/css/code-editor/ambiance.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Start Header Top Area -->
+<div class="header-top-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="logo-area">
+                    <a href="#"><img src="../static/img/logo/logo.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="header-top-menu">
+                    <ul class="nav navbar-nav notika-top-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                               class="nav-link dropdown-toggle"><span><i
+                                    class="notika-icon notika-search"></i></span></a>
+                            <div role="menu" class="dropdown-menu search-dd animated flipInX">
+                                <div class="search-input">
+                                    <i class="notika-icon notika-left-arrow"></i>
+                                    <input type="text"/>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button"
+                                                      aria-expanded="false" class="nav-link dropdown-toggle"><!--span--><i
+                                class="notika-icon notika-alarm"></i>
+                            <!--/span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>3</span></div-->
+                        </a>
+                            <div role="menu" class="dropdown-menu message-dd notification-dd animated zoomIn">
+                                <div class="hd-mg-tt">
+                                    <h2>Notification</h2>
+                                </div>
+                                <div class="hd-message-info">
+                                    <a href="#">
+                                        <div class="hd-message-sn">
+                                            <div class="hd-message-img">
+                                                <img src="img/post/1.jpg" alt=""/>
+                                            </div>
+                                            <div class="hd-mg-ctn">
+                                                <h3>David Belle</h3>
+                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="hd-message-sn">
+                                            <div class="hd-message-img">
+                                                <img src="img/post/2.jpg" alt=""/>
+                                            </div>
+                                            <div class="hd-mg-ctn">
+                                                <h3>Jonathan Morris</h3>
+                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="hd-message-sn">
+                                            <div class="hd-message-img">
+                                                <img src="img/post/4.jpg" alt=""/>
+                                            </div>
+                                            <div class="hd-mg-ctn">
+                                                <h3>Fredric Mitchell</h3>
+                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="hd-message-sn">
+                                            <div class="hd-message-img">
+                                                <img src="img/post/1.jpg" alt=""/>
+                                            </div>
+                                            <div class="hd-mg-ctn">
+                                                <h3>David Belle</h3>
+                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="hd-message-sn">
+                                            <div class="hd-message-img">
+                                                <img src="img/post/2.jpg" alt=""/>
+                                            </div>
+                                            <div class="hd-mg-ctn">
+                                                <h3>Glenn Jecobs</h3>
+                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="hd-mg-va">
+                                    <a href="#">View All</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Header Top Area -->
+
+<!-- Mobile Menu start -->
+<div class="mobile-menu-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="mobile-menu">
+                    <nav id="dropdown">
+                        <ul class="mobile-menu-nav">
+                            <li><a data-toggle="collapse" data-target="#Charts" href="#">Home</a>
+                                <ul class="collapse dropdown-header-top">
+                                    <li><a href="index.html">公司概况</a></li>
+                                    <li><a href="index-2.html">员工动向</a></li>
+                                </ul>
+                            </li>
+                            <li><a data-toggle="collapse" data-target="#Pagemob" href="#">联系我们</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mobile Menu end -->
+<!-- Main Menu area start-->
+<div class="main-menu-area mg-tb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                    <li class="active"><a data-toggle="tab" href="#Home"><i class="notika-icon notika-house"></i>
+                        Home</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#Page"><i class="notika-icon notika-support"></i> Contact Us</a>
+                    </li>
+                </ul>
+                <div class="tab-content custom-menu-content">
+                    <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li><a href="index.html">Summary</a>
+                            </li>
+                            <li><a href="index-2.html">Personnel Moverment</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="Page" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li><a href="contact.html">Team</a>
+                            </li>
+                            <li><a href="contact.html">Algorithm</a>
+                            </li>
+                            <li><a href="invoice.html">Disclaimer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Menu area End-->
+<div class="code-editor-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="nk-cd-ed-wp">
+                        <textarea id="code1">
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+### library
+# input and output
+import json
+import os
+import csv
+# data manipulation
+import pandas as pd
+import numpy as np
+# machine learning
+import sklearn
+from sklearn import model_selection, preprocessing, linear_model, naive_bayes, metrics, svm
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import accuracy_score
+# natural language processing
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+# dictionary
+import copy
+
+
+# In[2]:
+
+
+# load the scraped data
+def loadData(f = 'data.txt'):
+    with open(f) as file:
+        data = json.load(file)
+    return data
+
+
+# In[3]:
+
+
+# process the data by
+# 1. removing dots or similar (meaningless characters) in the job title
+# 2. format experience properly (conver into a list of dictionary)
+def dataProcessing(data):
+    for d in data:
+        # data cleaning for Job Title
+        d['Job Title'] = d['Job Title'].translate({ord(i):None for i in '!@#$,.'})
+        # data cleaning for Experience (modify it to a list of past experience)
+        if 'No results' in d['Experience']:
+            d.update({'Experience': ['No results']})
+            continue
+        exp = d['Experience'].split('\n')
+        experienceData = []
+        for e in exp:
+            parts = e.split('\t')
+            title = parts[0]
+            comp = parts[1]
+            dur = parts[2]
+            if(dur == 'No Expiration Data'):
+                dur = ''
+            experienceData.append({'Company': comp, 'Duration': dur, 'Title': title})
+        newExperience = {'Experience' : experienceData}
+        d.update(newExperience)
+    return data
+
+
+# In[4]:
+
+
+# get all the job title from the data list
+def getTitleList(data):
+    title = []
+    for d in data:
+        if d['Job Title'] not in title:
+            title.append(d['Job Title'])
+    for d in data:
+        if 'No results' in d['Experience']:
+            continue
+        for e in d['Experience']:
+            if e['Title'] not in title:
+                title.append(e['Title'])
+    return title
+
+
+# In[5]:
+
+
+# write all the title to csv file
+def writeTitle(title):
+    with open('Job Title.csv', 'w') as outfile:
+        for t in title:
+            outfile.write(t)
+            outfile.write('\n')
+    return
+
+
+# In[6]:
+
+
+# read title in the csv file
+# convert all titles into lower case
+def readTitle(f = 'Job Title.csv'):
+    title = pd.read_csv(f, engine = 'python')
+    title['Job Title'].dropna(inplace = True)
+    title['Job Title'] = [entry.lower() for entry in title['Job Title']]
+    return title
+
+
+# In[7]:
+
+
+# TD-IDF transformation prepared for NLP
+def vector(title):
+    Tfidf_vect = TfidfVectorizer(max_features=5000, stop_words = None)
+    Tfidf_vect.fit(title['Job Title'])
+    return Tfidf_vect
+
+
+# In[8]:
+
+
+# machine learning
+def SVM(Tfidf_vect, title):
+    X = title['Job Title']
+    y = title['Classification']
+    Train_X_Tfidf = Tfidf_vect.transform(X)
+    SVM = svm.SVC(C=100.0, kernel='linear', degree=1, gamma='auto')
+    SVM.fit(Train_X_Tfidf,y)
+    return SVM
+
+
+# In[9]:
+
+
+# prediction on current job title based on our machine
+def predict(SVM, Tfidf_vect, data):
+    for d in data:
+        d['Predicted'] = SVM.predict(Tfidf_vect.transform([d['Job Title']]))[0]
+    return data
+
+
+# In[10]:
+
+
+# predict all the job titles (in the companys one has worked or is working)
+def predictAll(SVM, Tfidf_vect, data):
+    for d in data:
+        d['AllPredicted'] = []
+        for e in d['Experience']:
+            if 'No results' in e:
+                continue
+            d['AllPredicted'].append(SVM.predict(Tfidf_vect.transform([e['Title']])))
+    return data
+
+
+# In[34]:
+
+
+# count title based on pre-defined category
+def countTitle(company, data):
+    current = {'Technical': 0, 'Research personnel': 0, 'Others': 0, 'Marketing': 0, 'Managerial': 0, 'HR': 0, 'Financial': 0, 'Business Analyst': 0}
+    for d in data:
+        if company in d['Company']:
+            if len(company) == len(d['Company']):
+                current.update({d['Predicted']: current[d['Predicted']] + 1})
+    return current
+
+
+# In[12]:
+
+
+# background (i.e. see if someone has technical/managerial background and we will count both)
+def countTitleAll(company, data):
+    potential = {'Technical': 0, 'Research personnel': 0, 'Others': 0, 'Marketing': 0, 'Managerial': 0, 'HR': 0, 'Financial': 0, 'Business Analyst': 0}
+    for d in data:
+        if company not in d['Company']:
+            continue
+        flag = {'Technical': False, 'Research personnel': False, 'Others': False, 'Marketing': False, 'Managerial': False, 'HR': False, 'Financial': False, 'Business Analyst': False}
+        for e in d['AllPredicted']:
+            if flag[e[-1]]:
+                continue
+            else:
+                potential.update({e[-1]: potential[e[-1]] + 1})
+                flag.update({e[-1]: True})
+    return potential
+
+
+# In[13]:
+
+
+# count how many people are there in a company
+def countPeople(company):
+    count = 0
+    for d in data:
+        if company in d['Company']:
+            count += 1
+    return count
+
+
+# In[14]:
+
+
+# count the percentage (i.e. 20% are technical personnel)
+def countTitlePercentage(company, current):
+    count = countPeople(company)
+    curCopy = copy.deepcopy(current)
+    for title in curCopy:
+        curCopy.update({title:float( '%.2f' % (curCopy[title]/count))})
+    return curCopy
+
+
+# In[15]:
+
+
+# calculate one's total working duration throughout one's life (on linkedin)
+def workingTime(data):
+    for d in data:
+        year = 0
+        month = 0
+        for e in d['Experience']:
+            if 'No results' in e:
+                month = -1
+                break
+            if 'No Expiration Date' in e['Duration']:
+                continue
+            if 'less than a year' in e['Duration']:
+                continue
+            if 'Expires' in e['Duration']:
+                continue
+            if 'Expired' in e['Duration']:
+                continue
+            e = e['Duration'].split()
+            if len(e) == 2:
+                if 'yr' in e[1]:
+                    year += int(e[0])
+                else:
+                    month += int(e[0])
+            else:
+                year += int(e[0])
+                month += int(e[2])
+        d['Working Time (month)'] = 12 * year + month
+    return data
+
+
+# In[16]:
+
+
+# calculate everyone's working duration in one particular company
+def workingTimeCompany(company, data):
+    worktime = []
+    for d in data:
+        if company not in d['Company']:
+            continue
+        else:
+            if d['Working Time (month)'] == -1:
+                continue
+            worktime.append(d['Working Time (month)'])
+    return worktime
+
+
+# In[17]:
+
+
+# how long one has stayed in a (particular) previous company
+def workingTimeAtPreCompany(company, data):
+    worktime = []
+    for d in data:
+        year = 0
+        month = 0
+        flag = False
+        if company in d['Company']:
+            continue
+        for e in d['Experience']:
+            if 'No results' in e:
+                break
+            if 'No Expiration Date' in e['Duration']:
+                continue
+            if 'less than a year' in e['Duration']:
+                continue
+            if 'Expires' in e['Duration']:
+                continue
+            if 'Expired' in e['Duration']:
+                continue
+            if company not in e['Company']:
+                continue
+            else:
+                e = e['Duration'].split()
+                if len(e) == 2:
+                    if 'yr' in e[1]:
+                        year += int(e[0])
+                    else:
+                        month += int(e[0])
+                else:
+                    year += int(e[0])
+                    month += int(e[2])
+                    flag = True
+        if flag:
+            worktime.append(12 * year + month)
+    return worktime
+
+
+# In[37]:
+
+
+# summary statistics of 'how long one has stayed in a (particular) previous company'
+def workingTimeAtPreCompanyCount(company, data):
+    worktime = workingTimeAtPreCompany(company, data)
+    w = [0, 0, 0, 0, 0, 0]
+    for wo in worktime:
+        if wo < 0:
+            continue
+        if wo < 24:
+            w[0] += 1
+        if wo < 48:
+            w[1] += 1
+        if wo < 72:
+            w[2] += 1
+        if wo < 96:
+            w[3] += 1
+        if wo < 120:
+            w[4] += 1
+        else:
+            w[5] += 1
+    return {'less than 2 years': w[0], '2 - 4 years': w[1], '4 - 6 years': w[2], '6 - 8 years': w[3], '8 - 10 years': w[4], 'more than 10 years': w[5]}
+
+
+# In[18]:
+
+
+# The five most frequent universities the employees in one certain company went to
+def MostFrequentUni(company, data):
+    college = {}
+    for d in data:
+        if 'No results' in d['College']:
+            continue
+        college.update({d['College']: 0})
+    for d in data:
+        if 'No results' in d['College']:
+            continue
+        college.update({d['College']: college[d['College']] + 1})
+    uni = ['', '', '', '', '']
+    first = 0; second = 0; third = 0; fourth = 0; fifth = 0;
+    for c in college:
+        if college[c] > first:
+            uni[0] = c
+            first = college[c]
+            continue
+        elif college[c] > second:
+            uni[1] = c
+            second = college[c]
+            continue
+        elif college[c] > third:
+            uni[2] = c
+            third = college[c]
+            continue
+        elif college[c] > fourth:
+            uni[3] = c
+            fourth = college[c]
+            continue
+        elif college[c] > fifth:
+            uni[4] = c
+            fifth = college[c]
+            continue
+        else:
+            continue
+    return {uni[0]: first, uni[1]: second, uni[2]: third, uni[3]: fourth, uni[4]: fifth}
+
+
+# In[19]:
+
+
+# summary statistics of working duration (for histogram)
+def histogramWorkTime(company, data):
+    w = [0,0,0,0,0,0,0,0,0,0,0]
+    for d in data:
+        wo = d['Working Time (month)']
+        if company not in d['Company']:
+            continue
+        if wo < 0:
+            continue
+        if wo < 42:
+            w[0] += 1
+        elif wo < 84:
+            w[1] += 1
+        elif wo < 126:
+            w[2] += 1
+        elif wo < 168:
+            w[3] += 1
+        elif wo < 210:
+            w[4] += 1
+        elif wo < 252:
+            w[5] += 1
+        elif wo < 294:
+            w[6] += 1
+        elif wo < 336:
+            w[7] += 1
+        elif wo < 378:
+            w[8] += 1
+        elif wo < 420:
+            w[9] += 1
+        else:
+            w[10] += 1
+    return w
+
+
+# In[20]:
+
+
+# Five companies employees have stayed before they came to the particular company
+def beforeCompany(company, data):
+    comp = ['', '', '', '', '']
+    count = 0
+    for d in data:
+        if company in d['Company']:
+            for e in d['Experience']:
+                if 'No results' in e:
+                    break
+                flag = True
+                for c in comp:
+                    if c in e['Company']:
+                        if len(c) == len(e['Company']):
+                            flag = False
+                if flag:
+                    if company in e['Company']:
+                        break
+                    comp[count] = e['Company']
+                    count += 1
+                    break
+        if count >= 5:
+            break
+    return comp
+
+
+# In[21]:
+
+
+# Five companies employees went after they had left to the particular company
+def afterCompany(company, data):
+    comp = ['', '', '', '', '']
+    count = 0
+    for d in data:
+        if company in d['Company']:
+            continue
+        flag = False
+        for e in d['Experience']:
+            if 'No results' in e:
+                break
+            if company in e['Company']:
+                flag = True
+                break
+        if flag:
+            for c in comp:
+                if c in d['Company']:
+                    if len(c) == len(d['Company']):
+                        flag = False
+            if flag:
+                comp[count] = d['Company']
+                count += 1
+        if count >= 5:
+            break
+    return comp
+
+
+# In[22]:
+
+
+# count the gender
+def genderCount(company, data):
+    gender = {'Male': 0, 'Female': 0}
+    for d in data:
+        if company in d['Company']:
+            gender.update({d['Gender']: gender[d['Gender']] + 1})
+    return gender
+
+
+# In[23]:
+
+
+# count the gender percentage
+def genderCountPercentage(company, data):
+    return countTitlePercentage(company, genderCount(company, data)) # one-liner masterpiece
+
+
+# In[3]:
+
+
+# summary statistics of the connections of the employees in a particular company on LinkedIn
+def connectionCount(company, data):
+    connect = [0, 0, 0, 0, 0, 0]
+    for d in data:
+        if '500' in d['Connection']:
+            con = 500
+        else:
+            con = int(d['Connection'])
+        if company not in d['Company']:
+            continue
+        if con < 0:
+            continue
+        elif con < 100:
+            connect[0] += 1
+        elif con < 200:
+            connect[1] += 1
+        elif con < 300:
+            connect[2] += 1
+        elif con < 400:
+            connect[3] += 1
+        elif con < 500:
+            connect[4] += 1
+        else:
+            connect[5] += 1
+    return connect
+
+
+# In[1]:
+
+
+# summary statistics of the education background in a particular company
+def educationCount(company, data):
+    edu = [0, 0, 0, 0]
+    for d in data:
+        if compant not in d['Company']:
+            continue
+        if 'Bachelor' in d['Degree']:
+            edu[1] += 1
+        elif 'Master' in d['Degree']:
+            edu[2] += 1
+        elif 'PhD' in d['Degree']:
+            edu[3] += 1
+        else:
+            edu[0] += 1
+    return {'Diploma or below': edu[0], 'Bachelor Degree': edu[1], 'Master Degree': edu[2], 'PhD': edu[3]}
+
+
+# In[25]:
+
+
+# pre-trained machine
+title = readTitle()
+Tfidf_vect = vector(title)
+SVM = SVM(Tfidf_vect, title)
+
+
+# In[26]:
+
+
+# data loading and processing
+data = loadData()
+data = dataProcessing(data)
+data = predict(SVM, Tfidf_vect, data)
+data = predictAll(SVM, Tfidf_vect, data)
+data = workingTime(data)
+
+
+# In[27]:
+
+
+# job categorization & percentage calculation
+currentJob = countTitle('Attain', data)
+potentialJob = countTitleAll('Attain', data)
+people = countPeople('Attain')
+curJobPer = countTitlePercentage('Attain', currentJob)
+potJobPer = countTitlePercentage('Attain', potentialJob)
+
+
+# In[28]:
+
+
+# working time
+data = workingTime(data)
+worktime = workingTimeCompany('Attain', data)
+preWorktime = workingTimeAtPreCompany('Attain', data)
+worktimeDistribution = histogramWorkTime('Attain', data)
+preCompany = workingTimeAtPreCompanyCount('Attain', data)
+
+
+# In[29]:
+
+
+# university and company related
+uni = MostFrequentUni('Attain', data)
+pre = beforeCompany('Attain', data)
+post = afterCompany('Attain', data)
+
+
+# In[30]:
+
+
+# gender, connection and education related
+gender = genderCount('Attain', data)
+genPer = genderCountPercentage('Attain', data)
+connection = connectionCount('Attain', data)
+education = educationCount('Attain', data)
+
+							</textarea>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="nk-cd-ed-wp sm-res-mg-t-30">
+                        <textarea id="code2">
+  #!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+### library
+# input and output
+import json
+import os
+import csv
+# data manipulation
+import pandas as pd
+import numpy as np
+# machine learning
+import sklearn
+from sklearn import model_selection, preprocessing, linear_model, naive_bayes, metrics, svm
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import accuracy_score
+# natural language processing
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+# dictionary
+import copy
+
+
+# In[2]:
+
+
+# load the scraped data
+def loadData(f = 'data.txt'):
+    with open(f) as file:
+        data = json.load(file)
+    return data
+
+
+# In[3]:
+
+
+# process the data by
+# 1. removing dots or similar (meaningless characters) in the job title
+# 2. format experience properly (conver into a list of dictionary)
+def dataProcessing(data):
+    for d in data:
+        # data cleaning for Job Title
+        d['Job Title'] = d['Job Title'].translate({ord(i):None for i in '!@#$,.'})
+        # data cleaning for Experience (modify it to a list of past experience)
+        if 'No results' in d['Experience']:
+            d.update({'Experience': ['No results']})
+            continue
+        exp = d['Experience'].split('\n')
+        experienceData = []
+        for e in exp:
+            parts = e.split('\t')
+            title = parts[0]
+            comp = parts[1]
+            dur = parts[2]
+            if(dur == 'No Expiration Data'):
+                dur = ''
+            experienceData.append({'Company': comp, 'Duration': dur, 'Title': title})
+        newExperience = {'Experience' : experienceData}
+        d.update(newExperience)
+    return data
+
+
+# In[4]:
+
+
+# get all the job title from the data list
+def getTitleList(data):
+    title = []
+    for d in data:
+        if d['Job Title'] not in title:
+            title.append(d['Job Title'])
+    for d in data:
+        if 'No results' in d['Experience']:
+            continue
+        for e in d['Experience']:
+            if e['Title'] not in title:
+                title.append(e['Title'])
+    return title
+
+
+# In[5]:
+
+
+# write all the title to csv file
+def writeTitle(title):
+    with open('Job Title.csv', 'w') as outfile:
+        for t in title:
+            outfile.write(t)
+            outfile.write('\n')
+    return
+
+
+# In[6]:
+
+
+# read title in the csv file
+# convert all titles into lower case
+def readTitle(f = 'Job Title.csv'):
+    title = pd.read_csv(f, engine = 'python')
+    title['Job Title'].dropna(inplace = True)
+    title['Job Title'] = [entry.lower() for entry in title['Job Title']]
+    return title
+
+
+# In[7]:
+
+
+# TD-IDF transformation prepared for NLP
+def vector(title):
+    Tfidf_vect = TfidfVectorizer(max_features=5000, stop_words = None)
+    Tfidf_vect.fit(title['Job Title'])
+    return Tfidf_vect
+
+
+# In[8]:
+
+
+# machine learning
+def SVM(Tfidf_vect, title):
+    X = title['Job Title']
+    y = title['Classification']
+    Train_X_Tfidf = Tfidf_vect.transform(X)
+    SVM = svm.SVC(C=100.0, kernel='linear', degree=1, gamma='auto')
+    SVM.fit(Train_X_Tfidf,y)
+    return SVM
+
+
+# In[9]:
+
+
+# prediction on current job title based on our machine
+def predict(SVM, Tfidf_vect, data):
+    for d in data:
+        d['Predicted'] = SVM.predict(Tfidf_vect.transform([d['Job Title']]))[0]
+    return data
+
+
+# In[10]:
+
+
+# predict all the job titles (in the companys one has worked or is working)
+def predictAll(SVM, Tfidf_vect, data):
+    for d in data:
+        d['AllPredicted'] = []
+        for e in d['Experience']:
+            if 'No results' in e:
+                continue
+            d['AllPredicted'].append(SVM.predict(Tfidf_vect.transform([e['Title']])))
+    return data
+
+
+# In[34]:
+
+
+# count title based on pre-defined category
+def countTitle(company, data):
+    current = {'Technical': 0, 'Research personnel': 0, 'Others': 0, 'Marketing': 0, 'Managerial': 0, 'HR': 0, 'Financial': 0, 'Business Analyst': 0}
+    for d in data:
+        if company in d['Company']:
+            if len(company) == len(d['Company']):
+                current.update({d['Predicted']: current[d['Predicted']] + 1})
+    return current
+
+
+# In[12]:
+
+
+# background (i.e. see if someone has technical/managerial background and we will count both)
+def countTitleAll(company, data):
+    potential = {'Technical': 0, 'Research personnel': 0, 'Others': 0, 'Marketing': 0, 'Managerial': 0, 'HR': 0, 'Financial': 0, 'Business Analyst': 0}
+    for d in data:
+        if company not in d['Company']:
+            continue
+        flag = {'Technical': False, 'Research personnel': False, 'Others': False, 'Marketing': False, 'Managerial': False, 'HR': False, 'Financial': False, 'Business Analyst': False}
+        for e in d['AllPredicted']:
+            if flag[e[-1]]:
+                continue
+            else:
+                potential.update({e[-1]: potential[e[-1]] + 1})
+                flag.update({e[-1]: True})
+    return potential
+
+
+# In[13]:
+
+
+# count how many people are there in a company
+def countPeople(company):
+    count = 0
+    for d in data:
+        if company in d['Company']:
+            count += 1
+    return count
+
+
+# In[14]:
+
+
+# count the percentage (i.e. 20% are technical personnel)
+def countTitlePercentage(company, current):
+    count = countPeople(company)
+    curCopy = copy.deepcopy(current)
+    for title in curCopy:
+        curCopy.update({title:float( '%.2f' % (curCopy[title]/count))})
+    return curCopy
+
+
+# In[15]:
+
+
+# calculate one's total working duration throughout one's life (on linkedin)
+def workingTime(data):
+    for d in data:
+        year = 0
+        month = 0
+        for e in d['Experience']:
+            if 'No results' in e:
+                month = -1
+                break
+            if 'No Expiration Date' in e['Duration']:
+                continue
+            if 'less than a year' in e['Duration']:
+                continue
+            if 'Expires' in e['Duration']:
+                continue
+            if 'Expired' in e['Duration']:
+                continue
+            e = e['Duration'].split()
+            if len(e) == 2:
+                if 'yr' in e[1]:
+                    year += int(e[0])
+                else:
+                    month += int(e[0])
+            else:
+                year += int(e[0])
+                month += int(e[2])
+        d['Working Time (month)'] = 12 * year + month
+    return data
+
+
+# In[16]:
+
+
+# calculate everyone's working duration in one particular company
+def workingTimeCompany(company, data):
+    worktime = []
+    for d in data:
+        if company not in d['Company']:
+            continue
+        else:
+            if d['Working Time (month)'] == -1:
+                continue
+            worktime.append(d['Working Time (month)'])
+    return worktime
+
+
+# In[17]:
+
+
+# how long one has stayed in a (particular) previous company
+def workingTimeAtPreCompany(company, data):
+    worktime = []
+    for d in data:
+        year = 0
+        month = 0
+        flag = False
+        if company in d['Company']:
+            continue
+        for e in d['Experience']:
+            if 'No results' in e:
+                break
+            if 'No Expiration Date' in e['Duration']:
+                continue
+            if 'less than a year' in e['Duration']:
+                continue
+            if 'Expires' in e['Duration']:
+                continue
+            if 'Expired' in e['Duration']:
+                continue
+            if company not in e['Company']:
+                continue
+            else:
+                e = e['Duration'].split()
+                if len(e) == 2:
+                    if 'yr' in e[1]:
+                        year += int(e[0])
+                    else:
+                        month += int(e[0])
+                else:
+                    year += int(e[0])
+                    month += int(e[2])
+                    flag = True
+        if flag:
+            worktime.append(12 * year + month)
+    return worktime
+
+
+# In[37]:
+
+
+# summary statistics of 'how long one has stayed in a (particular) previous company'
+def workingTimeAtPreCompanyCount(company, data):
+    worktime = workingTimeAtPreCompany(company, data)
+    w = [0, 0, 0, 0, 0, 0]
+    for wo in worktime:
+        if wo < 0:
+            continue
+        if wo < 24:
+            w[0] += 1
+        if wo < 48:
+            w[1] += 1
+        if wo < 72:
+            w[2] += 1
+        if wo < 96:
+            w[3] += 1
+        if wo < 120:
+            w[4] += 1
+        else:
+            w[5] += 1
+    return {'less than 2 years': w[0], '2 - 4 years': w[1], '4 - 6 years': w[2], '6 - 8 years': w[3], '8 - 10 years': w[4], 'more than 10 years': w[5]}
+
+
+# In[18]:
+
+
+# The five most frequent universities the employees in one certain company went to
+def MostFrequentUni(company, data):
+    college = {}
+    for d in data:
+        if 'No results' in d['College']:
+            continue
+        college.update({d['College']: 0})
+    for d in data:
+        if 'No results' in d['College']:
+            continue
+        college.update({d['College']: college[d['College']] + 1})
+    uni = ['', '', '', '', '']
+    first = 0; second = 0; third = 0; fourth = 0; fifth = 0;
+    for c in college:
+        if college[c] > first:
+            uni[0] = c
+            first = college[c]
+            continue
+        elif college[c] > second:
+            uni[1] = c
+            second = college[c]
+            continue
+        elif college[c] > third:
+            uni[2] = c
+            third = college[c]
+            continue
+        elif college[c] > fourth:
+            uni[3] = c
+            fourth = college[c]
+            continue
+        elif college[c] > fifth:
+            uni[4] = c
+            fifth = college[c]
+            continue
+        else:
+            continue
+    return {uni[0]: first, uni[1]: second, uni[2]: third, uni[3]: fourth, uni[4]: fifth}
+
+
+# In[19]:
+
+
+# summary statistics of working duration (for histogram)
+def histogramWorkTime(company, data):
+    w = [0,0,0,0,0,0,0,0,0,0,0]
+    for d in data:
+        wo = d['Working Time (month)']
+        if company not in d['Company']:
+            continue
+        if wo < 0:
+            continue
+        if wo < 42:
+            w[0] += 1
+        elif wo < 84:
+            w[1] += 1
+        elif wo < 126:
+            w[2] += 1
+        elif wo < 168:
+            w[3] += 1
+        elif wo < 210:
+            w[4] += 1
+        elif wo < 252:
+            w[5] += 1
+        elif wo < 294:
+            w[6] += 1
+        elif wo < 336:
+            w[7] += 1
+        elif wo < 378:
+            w[8] += 1
+        elif wo < 420:
+            w[9] += 1
+        else:
+            w[10] += 1
+    return w
+
+
+# In[20]:
+
+
+# Five companies employees have stayed before they came to the particular company
+def beforeCompany(company, data):
+    comp = ['', '', '', '', '']
+    count = 0
+    for d in data:
+        if company in d['Company']:
+            for e in d['Experience']:
+                if 'No results' in e:
+                    break
+                flag = True
+                for c in comp:
+                    if c in e['Company']:
+                        if len(c) == len(e['Company']):
+                            flag = False
+                if flag:
+                    if company in e['Company']:
+                        break
+                    comp[count] = e['Company']
+                    count += 1
+                    break
+        if count >= 5:
+            break
+    return comp
+
+
+# In[21]:
+
+
+# Five companies employees went after they had left to the particular company
+def afterCompany(company, data):
+    comp = ['', '', '', '', '']
+    count = 0
+    for d in data:
+        if company in d['Company']:
+            continue
+        flag = False
+        for e in d['Experience']:
+            if 'No results' in e:
+                break
+            if company in e['Company']:
+                flag = True
+                break
+        if flag:
+            for c in comp:
+                if c in d['Company']:
+                    if len(c) == len(d['Company']):
+                        flag = False
+            if flag:
+                comp[count] = d['Company']
+                count += 1
+        if count >= 5:
+            break
+    return comp
+
+
+# In[22]:
+
+
+# count the gender
+def genderCount(company, data):
+    gender = {'Male': 0, 'Female': 0}
+    for d in data:
+        if company in d['Company']:
+            gender.update({d['Gender']: gender[d['Gender']] + 1})
+    return gender
+
+
+# In[23]:
+
+
+# count the gender percentage
+def genderCountPercentage(company, data):
+    return countTitlePercentage(company, genderCount(company, data)) # one-liner masterpiece
+
+
+# In[3]:
+
+
+# summary statistics of the connections of the employees in a particular company on LinkedIn
+def connectionCount(company, data):
+    connect = [0, 0, 0, 0, 0, 0]
+    for d in data:
+        if '500' in d['Connection']:
+            con = 500
+        else:
+            con = int(d['Connection'])
+        if company not in d['Company']:
+            continue
+        if con < 0:
+            continue
+        elif con < 100:
+            connect[0] += 1
+        elif con < 200:
+            connect[1] += 1
+        elif con < 300:
+            connect[2] += 1
+        elif con < 400:
+            connect[3] += 1
+        elif con < 500:
+            connect[4] += 1
+        else:
+            connect[5] += 1
+    return connect
+
+
+# In[1]:
+
+
+# summary statistics of the education background in a particular company
+def educationCount(company, data):
+    edu = [0, 0, 0, 0]
+    for d in data:
+        if compant not in d['Company']:
+            continue
+        if 'Bachelor' in d['Degree']:
+            edu[1] += 1
+        elif 'Master' in d['Degree']:
+            edu[2] += 1
+        elif 'PhD' in d['Degree']:
+            edu[3] += 1
+        else:
+            edu[0] += 1
+    return {'Diploma or below': edu[0], 'Bachelor Degree': edu[1], 'Master Degree': edu[2], 'PhD': edu[3]}
+
+
+# In[25]:
+
+
+# pre-trained machine
+title = readTitle()
+Tfidf_vect = vector(title)
+SVM = SVM(Tfidf_vect, title)
+
+
+# In[26]:
+
+
+# data loading and processing
+data = loadData()
+data = dataProcessing(data)
+data = predict(SVM, Tfidf_vect, data)
+data = predictAll(SVM, Tfidf_vect, data)
+data = workingTime(data)
+
+
+# In[27]:
+
+
+# job categorization & percentage calculation
+currentJob = countTitle('Attain', data)
+potentialJob = countTitleAll('Attain', data)
+people = countPeople('Attain')
+curJobPer = countTitlePercentage('Attain', currentJob)
+potJobPer = countTitlePercentage('Attain', potentialJob)
+
+
+# In[28]:
+
+
+# working time
+data = workingTime(data)
+worktime = workingTimeCompany('Attain', data)
+preWorktime = workingTimeAtPreCompany('Attain', data)
+worktimeDistribution = histogramWorkTime('Attain', data)
+preCompany = workingTimeAtPreCompanyCount('Attain', data)
+
+
+# In[29]:
+
+
+# university and company related
+uni = MostFrequentUni('Attain', data)
+pre = beforeCompany('Attain', data)
+post = afterCompany('Attain', data)
+
+
+# In[30]:
+
+
+# gender, connection and education related
+gender = genderCount('Attain', data)
+genPer = genderCountPercentage('Attain', data)
+connection = connectionCount('Attain', data)
+education = educationCount('Attain', data)
+							</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Code Editor area End-->
+
+
+<!-- Start Footer area-->
+<div class="footer-copyright-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-copy-right">
+                    <p>Copyright © 2018
+                        . All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Footer area-->
+<!-- jquery
+		============================================ -->
+<script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+<!-- bootstrap JS
+    ============================================ -->
+<script src="../static/js/bootstrap.min.js"></script>
+<!-- wow JS
+    ============================================ -->
+<script src="../static/js/wow.min.js"></script>
+<!-- price-slider JS
+    ============================================ -->
+<script src="../static/js/jquery-price-slider.js"></script>
+<!-- owl.carousel JS
+    ============================================ -->
+<script src="../static/js/owl.carousel.min.js"></script>
+<!-- scrollUp JS
+    ============================================ -->
+<script src="../static/js/jquery.scrollUp.min.js"></script>
+<!-- meanmenu JS
+    ============================================ -->
+<script src="../static/js/meanmenu/jquery.meanmenu.js"></script>
+<!-- counterup JS
+    ============================================ -->
+<script src="../static/js/counterup/jquery.counterup.min.js"></script>
+<script src="../static/js/counterup/waypoints.min.js"></script>
+<script src="../static/js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
+    ============================================ -->
+<script src="../static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- sparkline JS
+    ============================================ -->
+<script src="../static/js/sparkline/jquery.sparkline.min.js"></script>
+<script src="../static/js/sparkline/sparkline-active.js"></script>
+<!-- flot JS
+    ============================================ -->
+<script src="../static/js/flot/jquery.flot.js"></script>
+<script src="../static/js/flot/jquery.flot.resize.js"></script>
+<script src="../static/js/flot/flot-active.js"></script>
+<!-- knob JS
+    ============================================ -->
+<script src="../static/js/knob/jquery.knob.js"></script>
+<script src="../static/js/knob/jquery.appear.js"></script>
+<script src="../static/js/knob/knob-active.js"></script>
+<!-- code editor JS
+    ============================================ -->
+<script src="../static/js/code-editor/codemirror.js"></script>
+<script src="../static/js/code-editor/code-editor.js"></script>
+<script src="../static/js/code-editor/code-editor-active.js"></script>
+<!--  Chat JS
+    ============================================ -->
+<script src="../static/js/chat/jquery.chat.js"></script>
+<!--  todo JS
+    ============================================ -->
+<script src="../static/js/todo/jquery.todo.js"></script>
+<!--  wave JS
+    ============================================ -->
+<script src="../static/js/wave/waves.min.js"></script>
+<script src="../static/js/wave/wave-active.js"></script>
+<!-- plugins JS
+    ============================================ -->
+<script src="../static/js/plugins.js"></script>
+<!-- main JS
+    ============================================ -->
+<script src="../static/js/main.js"></script>
+<!-- tawk chat JS
+    ============================================ -->
+<script src="../static/js/tawk-chat.js"></script>
+</body>
+
+</html>
